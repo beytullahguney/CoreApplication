@@ -9,5 +9,7 @@ namespace CoreApplication
         public int Wheels { get; set; }
         public string Name { get; set; }
 
+        public string GetOwner(string owner);
+       
     }
 }
