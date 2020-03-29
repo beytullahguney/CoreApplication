@@ -10,6 +10,9 @@ namespace CoreApplication
             Console.WriteLine("Repository Change");
 
             SportCar car = new SportCar(4, "BeytX Car Cooperation");
+            Console.WriteLine(car.Name);
+
+            Console.ReadLine();
         }
     }
 }
