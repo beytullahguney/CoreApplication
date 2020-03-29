@@ -8,6 +8,8 @@ namespace CoreApplication
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Repository Change");
+
+            SportCar car = new SportCar(4, "BeytX Car Cooperation");
         }
     }
 }

@@ -6,18 +6,19 @@ namespace CoreApplication
 {
     public class SportCar : ICar
     {
-        
-        
-        //public int Wheels;
-        //public string Name;
+        public int Wheels { get; set; }
+        public string Name { get; set; }
 
-        public SportCar()
+
+        public SportCar(int _wheels, string _name)
         {
-            Wheels = 4;
-            Name = "Ferrari";
+            Wheels = _wheels;
+            Name = _name;
         }
 
-        public int Wheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string GetOwner(string owner)
+        {
+            return string.Format("This car owner is {0}", owner);
+        }
     }
 }
